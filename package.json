@@ -1,0 +1,29 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "Online Shop for selling essentials",
+  "main": "app.js",
+  "scripts": {
+    "test": "app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enochbayode/ecommerce.git"
+  },
+  "author": "Enoch Bayode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enochbayode/ecommerce/issues"
+  },
+  "homepage": "https://github.com/enochbayode/ecommerce#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.6.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.7",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.20"
+  }
+}
