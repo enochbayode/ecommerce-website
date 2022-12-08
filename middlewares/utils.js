@@ -65,6 +65,9 @@ class Utils {
       ACCOUNT_INACTIVE: 'That account is currently inactive',
       MAIL_SUCCESS: 'Your mail has been sent and is currently being delivered',
       PACKAGE_SUMMITED_SUCCESS: 'Request to send package submitted successfully',
+      ITEM_FETCHED_SUCCESS: 'Items fetched successfully',
+      ITEM_FETCHED_FAIL: 'Items not fetched',
+      ITEM_EXISTENCE_ERROR: 'Item does not exist',
     };
   }
 
