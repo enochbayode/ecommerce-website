@@ -67,7 +67,7 @@ class Utils {
       PACKAGE_SUMMITED_SUCCESS: 'Request to send package submitted successfully',
       ITEM_FETCHED_SUCCESS: 'Items fetched successfully',
       ITEM_FETCHED_FAIL: 'Items not fetched',
-      ITEM_EXISTENCE_ERROR: 'Item does not exist',
+      ITEM_EXISTENCE_ERROR: 'Item not found',
     };
   }
 

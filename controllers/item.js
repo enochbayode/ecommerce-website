@@ -102,7 +102,7 @@ const deleteItem = async (req, res) => {
     } catch (error) {
         res.json({
             status: 500,
-            message: "unable to delete package",
+            message: "unable to delete item",
             error: utils.getMessage("UNKNOWN_ERROR")
         })
     }

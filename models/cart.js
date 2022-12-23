@@ -8,21 +8,26 @@ const cartSchema = new mongoose.Schema({
         ref: 'User'
     },
 
-    items: [{
+    items: [
+        {
         itemId: {
             type: ObjectID,
             ref: 'Item',
             required: true
         },
+
         name: String,
+
         quantity: {
             type: Number,
             required: true,
             min: 1,
             default: 1
         },
+
         price: Number
-    }],
+        }
+    ],
 
     bill: {
         type: Number,
@@ -30,6 +35,7 @@ const cartSchema = new mongoose.Schema({
         default: 0
     }
 }, 
+
 {
     timestamps: true
 })

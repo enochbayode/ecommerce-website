@@ -107,6 +107,7 @@ const updateUserProfile = async (req, res) =>{
                 error: utils.getMessage("EXISTENCE_ERROR"),
             });
         }
+
         const updateProfile = {
             firstName: req.body.firstName,
             lastName: req.body.lastName,
@@ -132,6 +133,7 @@ const updateUserProfile = async (req, res) =>{
             message: "user updated successfully",
             data: updatedUser,
         });
+        
     } catch (error) {
         return res.status(500).json({
             status: false,
