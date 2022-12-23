@@ -8,9 +8,9 @@ const {
         validateUser, 
     } = require('../middlewares/user.validation')
 
-cartrouter.post("/getitem", validateUser, cart.getCartItem);
+cartrouter.get("/getitem", validateUser, cart.getCartItem);
 cartrouter.post("/additem", validateUser, cart.addToCart);
-cartrouter.post("/deleteitem", validateUser, cart.deleteItemInCart);
+cartrouter.delete("/deleteitem", validateUser, cart.deleteItemInCart);
 
 
 module.exports = { cartrouter };
