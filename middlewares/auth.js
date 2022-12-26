@@ -49,6 +49,7 @@ class Auth {
 
             if (!user.isActive) {
                 const error = "ACCOUNT_DISABLED";
+                console.log(error)
                 return res.status(403).json({
                     status: false,
                     message: "You've got some errors.",

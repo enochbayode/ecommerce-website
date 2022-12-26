@@ -17,6 +17,11 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true,
     },
+    isActive:{
+        type: Boolean,
+        default: true
+
+    }
     // confirmPassword: {
     //     type: String,
     //     required: true,

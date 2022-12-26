@@ -1,5 +1,5 @@
 // importing the required modules
-const { Item } = require("../models/item");
+const Item = require("../models/item");
 const bcrypt = require("bcrypt");
 const { Utils } = require("../middlewares/utils");
 
