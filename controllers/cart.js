@@ -113,19 +113,19 @@ const deleteItemInCart = async(req, res) => {
 
             cart = await cart.save();
 
-            res.status(200).send({
+            res.status(200).json({
                 message: "Successful",
                 data: cart
             });
         } else {
-            res.status(404).send({
+            res.status(404).json({
                 status: "failed",
                 message: "Iem not found",
                 error: utils.getMessage("ITEM_EXISTENCE_ERROR")
             });
             }
     } catch (error) {
-        res.status(500).send({
+        res.status(500).json({
             status: "failed",
             message: "something went wrong.",
             error: utils.getMessage("UNKNOWN_ERROR"),
