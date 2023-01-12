@@ -9,25 +9,25 @@ const cartSchema = new mongoose.Schema({
     },
 
     items: [
-        {
-        itemId: {
-            type: ObjectID,
-            ref: 'Item',
-            required: true
-        },
+            {
+            itemId: {
+                type: ObjectID,
+                ref: 'Item',
+                required: true
+            },
 
-        name: String,
+            name: String,
 
-        quantity: {
-            type: Number,
-            required: true,
-               min: 1,
-            default: 1
-        },
+            quantity: {
+                type: Number,
+                required: true,
+                min: 1,
+                default: 1
+            },
 
-        price: Number
-        }
-    ],
+            price: Number
+            }
+        ],
 
     bill: {
         type: Number,

@@ -9,9 +9,9 @@ const {
         validateUser, 
     } = require('../middlewares/user.validation')
 
-cartrouter.get("/getitem", auth.tokenRequired, cart.getCartItem);
-cartrouter.post("/additem", auth.tokenRequired, cart.addToCart);
-cartrouter.delete("/deleteitem", auth.tokenRequired, cart.deleteItemInCart);
+cartrouter.get("/getcartitem", auth.tokenRequired, cart.getCartItem);
+cartrouter.post("/addtocart", auth.tokenRequired, cart.addToCart);
+cartrouter.delete("/deletecartitem", auth.tokenRequired, cart.deleteItemInCart);
 
 
 

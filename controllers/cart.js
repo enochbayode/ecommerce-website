@@ -24,11 +24,12 @@ const getCartItem = async(req, res) => {
             })
         }
     } catch (error) {
-        res.status(500).json({
-            status: false,
-            message: "Unable to register user.",
-            error: utils.getMessage("UNKNOWN_ERROR"),
-        });
+        console.log(error)
+        // res.status(500).json({
+        //     status: false,
+        //     message: "Unable to register user.",
+        //     error: utils.getMessage("UNKNOWN_ERROR"),
+        // });
     }
 }
 
