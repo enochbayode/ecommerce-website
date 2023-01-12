@@ -11,7 +11,7 @@ const getCartItem = async(req, res) => {
     const owner = req.user._id;
     try {
         const cart = await Cart.findOne({ owner });
-        if (cart & cart.items.length > 0){
+        if (cart && cart.items.length > 0){
             return res.json({
                 status: 200,
                 data: cart
@@ -25,11 +25,11 @@ const getCartItem = async(req, res) => {
         }
     } catch (error) {
         console.log(error)
-        // res.status(500).json({
-        //     status: false,
-        //     message: "Unable to register user.",
-        //     error: utils.getMessage("UNKNOWN_ERROR"),
-        // });
+        res.status(500).json({
+            status: false,
+            message: "Unable to register user.",
+            error: utils.getMessage("UNKNOWN_ERROR"),
+        });
     }
 }
 
@@ -42,7 +42,7 @@ const addToCart = async(req, res) => {
         const item = await Item.findOne({ _id: itemId });
 
         if (!item){
-            return res.status(400)({
+            return res.status(400).json({
                 status: false,
                 message: "Item does not exist.",
                 error: utils.getMessage("ITEM_EXISTENCE_ERROR"),
