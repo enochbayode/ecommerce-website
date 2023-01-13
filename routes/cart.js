@@ -11,7 +11,7 @@ const {
 
 cartrouter.get("/getcartitem", auth.tokenRequired, cart.getCartItem);
 cartrouter.post("/addtocart", auth.tokenRequired, cart.addToCart);
-cartrouter.delete("/deletecartitem", auth.tokenRequired, cart.deleteItemInCart);
+cartrouter.delete("/deletecartitem/itemId", auth.tokenRequired, cart.deleteItemInCart);
 
 
 

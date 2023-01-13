@@ -76,6 +76,7 @@ const getAnItem = async (req, res) => {
 };
 
 const deleteItem = async (req, res) => {
+    const { id } = req.params;
     try {
         const itemExists = await Item.findById({ _id: id });
         if (!itemExists) {
