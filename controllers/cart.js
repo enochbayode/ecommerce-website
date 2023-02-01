@@ -20,7 +20,7 @@ const getCartItem = async(req, res) => {
             res.json({
                 status: 400,
                 Message: "No item found in the cart",
-                // error:,
+               // error:,
             })
         }
     } catch (error) {
